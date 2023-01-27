@@ -1,16 +1,16 @@
 import Link from 'next/link'
-import { useEffect } from 'react'
-import {useRouter} from 'next/router'
+import { useEffect } from 'react';
+import {useRouter} from 'next/router';
 
 
-function pageNotFound() {
+function PageNotFound() {
     const router = useRouter();
 
     useEffect(() =>{
         setTimeout(()=>{
           router.push('/');
-        },3000)
-    },[])
+        },3000);
+    },[]);
   return (
     <div className='not-found'>
       <h1>Oooops...</h1>
@@ -20,4 +20,4 @@ function pageNotFound() {
   )
 }
 
-export default pageNotFound
+export default PageNotFound
